@@ -1,4 +1,4 @@
-# Condicionales [Python]
+# Tipos de variables [Python]
 # Ejercicios de profundización
 
 # Autor: Inove Coding School
@@ -12,34 +12,69 @@
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
 
-# Ejercicios de práctica con números
+# Ejercicios de práctica numérica y cadenas
 '''
 Enunciado:
-Realice un programa que solicite el ingreso de tres números
-enteros, y luego en cada caso informe si el número es par
-o impar.
-Para cada caso imprimir el resultado en pantalla.
+Realice un programa que consulte por consola:
+- El nombre completo de la persona
+- El DNI de la persona
+- La edad de la persona
+- La altura de la persona
+
+Finalmente el programa debe imprimir dos líneas de texto por separado
+- En una línea imprimir el nombre completo y el DNI, aclarando de que
+  campo se trata cada uno
+        Ej: Nombre Completo: Nombre Apellido , DNI:35205070,
+- En la segunda línea se debe imprimir el nombre completo, edad y
+  altura de la persona
+  Nuevamente debe aclarar el campo de cada uno, para el que lo lea
+  entienda de que se está hablando.
 '''
 
-print('Ejercicios de práctica con números')
+print('Sistema de ingreso de datos')
 # Empezar aquí la resolución del ejercicio
 
-numero1 = int(input('ingrese un numero entero:\n'))
-numero2 = int(input('ingrese el segundo numero entero:\n'))
-numero3 = int(input('ingrese el tercer numero entero:\n'))
+#ingresando datos, nombre completo
 
-if (numero1 % 2) == 0:
-    print('par')
-elif (numero1 % 2) == 1:
-    print('impar')
-elif (numero2 % 2) == 0:
-    print('par')
-elif (numero2 % 2) == 1:
-    print('impar')
-elif (numero3 % 2) == 0:
-    print('par')
-elif (numero3 % 2) == 1:
-    print('impar')
-    
+print("¿como se llama?")
+nombre_completo = input()
+print(f"me alego de conocerlo, {nombre_completo}")
+
+#ingresando datos, DNI
+
+print("ingrese su numero de DNI")
+DNI = input()
+print("sus datos fueron aprobados")
+print(f"compruebe si los datos, {nombre_completo}, y {DNI}, son validos")
+
+#ingresando edad
+
+print("ahora ingrerse su edad en numeros")
+edad = input()
+print(f"la edad ingresada es, {edad}")
+
+#ingresando altura
+
+print("por favor, por ultimo ingrese su altura")
+altura = input()
+print(f"la altura ingrasada es, {altura}")
+
+#lineas de datos ingresados
+
+print(f"los datos ingresados son, {nombre_completo}, con {DNI}")
+print(f"bienvenido a inove, {nombre_completo}, su edad es {edad}, y su altura {altura}")
+print("gracias por confiar en nosotros")
+
+
+
+
+
+
+
+
+
+
+
+
 
 

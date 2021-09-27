@@ -1,4 +1,4 @@
-# Condicionales [Python]
+# Tipos de variables [Python]
 # Ejercicios de profundización
 
 # Autor: Inove Coding School
@@ -12,59 +12,63 @@
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
 
-# Ejercicios de práctica con texto
+# Ejercicios de práctica numérica y cadenas
 '''
 Enunciado:
-Realice un programa que solicite por consola 3 palabras cualesquiera
-Luego el programa debe consultar al usuario como quiere ordenar las palabras
-1 - Ordenar por orden alfabético (usando el operador ">")
-2 - Ordenar por cantidad de letras (longitud de la palabra (len) y operador ">")
+Realice un programa que determine cual sería el apellido de una persona
+al ingresara los dos nombres completos de sus padres.
+En definitiva se solicita crear una variable nueva que reuna
+los apellidos.
 
-Si se ingresa "1" por consola se deben ordenar las 3 palabras por orden alfabético
-e imprimir en pantalla de la mayor a la menor
+- Primero el programa debe consultar el nombre completo del padre_1
+- Luego el programa debe consultar el nombre completo del padre_2
+- Luego debe consultar el nombre del hijo/a
+- Debe extraer los apellidos de los padres (ver la nota al final)
+- Luego formar el nombre completo del hijo/a utilizando los apellidos
+  de sus padres y el nombre ingresado de dicha persona
+- Imprimir en pantalla el resultado
 
-Si se ingresa "2" por consola se deben ordenar las 3 palabras por cantidad de letras
-e imprimir en pantalla de la mayor a la menor
+NOTA: Para extraer el apellido del nombre completo recomendamos usar
+el método "split"
+Mostraremos un ejemplo:
 
-IMPORTANTE: Para ordenar las palabras deben realizar condicionales compuestos o anidados,
-no se busca utilizar bucles o algoritmos de ordenamiento ya que aún no hemos llegado a ese
-contenido.
+direccion_completa = 'Monroe 2716'
+calle, altura = direccion_completa.split(' ')
+
+Les dejo por su cuenta a que busquen un poco más acerca de este método
+que seguramente utilizarán mucho de acá en adelante.
+Les dejamos un link con algunos ejemplos más:
+https://www.pythonforbeginners.com/dictionary/python-split
+
+Cualquier duda con el método split pueden consultarla por el campus
 '''
 
-print('Ejercicios de práctica con cadenas\n ')
+print('Jugando con texto')
 # Empezar aquí la resolución del ejercicio
 
-palabra1 = (input('ingrese la primer palabra:\n'))
-palabra2 = (input('ingrese la segunda palabra:\n'))
-palabra3 = (input('ingrese la tercer palabra:\n'))
+print("ingrese el nombre del padre")
+nombre_padre = input()
+print(f"el nombre ingresado es, {nombre_padre.split(' ')}")
+nombre, segundo_nombre, apellido = nombre_padre.split(' ')
+print(nombre_padre.split(' '))
+print("ingrese nombre de la madre")
+nombre_madre = input()
+print(f"el nombre ingresado es, {nombre_madre.split(' ')}")
+nombre, segundo_nombre, apellido2 = nombre_madre.split(' ')
+print(nombre_madre.split(' '))
+print("ingrese nombre del hijo")
+nombre_hijo = input()
+print(f"el nombre ingresado es, {nombre_hijo.split(' ')}")
+nombre, segundo_nombre = nombre_hijo.split(' ')
+print(nombre_hijo.split(' '))
+print("el nombre completo del hijo es")
+nombre_completo_hijo = nombre_hijo, apellido, apellido2
+print(nombre_completo_hijo)
 
-print('¿como desea ordenar las palabras ingresadas?\n')
 
-opciones = int(input('presione 1 para ordenar alfabeticamente o presione 2 para ordenar por longitud: '))
 
-if opciones == 1 and palabra1 > palabra2 and palabra1 > palabra3 and palabra2 > palabra3:
-    print('el orden es: ', palabra1, palabra2, palabra3)
-elif palabra2 > palabra1 and palabra2 > palabra3 and palabra1 > palabra3:
-    print('el orden es: ', palabra2, palabra1, palabra3)
-elif palabra3 > palabra1 and palabra3 > palabra2 and palabra2 > palabra1:
-    print('el orden es: ', palabra3, palabra2, palabra1)
-elif palabra2 > palabra1 and palabra2 > palabra3 and palabra3 > palabra1:
-    print('el orden es: ', palabra2, palabra3, palabra1)
-elif palabra3 > palabra2 and palabra3 > palabra1 and  palabra1 > palabra2:
-    print('el orden es: ', palabra3, palabra1, palabra2)
-elif palabra1 > palabra3 and palabra1 > palabra2 and palabra3 > palabra2:
-    print('el orden es: ', palabra1, palabra3, palabra2)
-elif opciones == 2 and len(palabra1) > len(palabra2) and len(palabra1) > len(palabra3) and len(palabra2) > len(palabra3):
-    print('el orden es: ', len(palabra1), len(palabra2), len(palabra3))
-elif len(palabra2) > len(palabra1) and len(palabra2) > len(palabra3) and len(palabra1) > len(palabra3):
-    print('el orden es: ', len(palabra2), len(palabra1), len(palabra3))
-elif len(palabra3) > len(palabra1) and len(palabra3) > len(palabra2) and len(palabra2) > len(palabra1):
-    print('el orden es: ', len(palabra3), len(palabra2), len(palabra1))
-elif len(palabra2) > len(palabra1) and len(palabra2) > len(palabra3) and len(palabra3) > len(palabra1):
-    print('el orden es: ', len(palabra2), len(palabra3), len(palabra1))
-elif len(palabra3) > len(palabra2) and len(palabra3) > len(palabra1) and len(palabra1) > len(palabra2):
-    print('el orden es: ', len(palabra3), len(palabra1), len(palabra2))
-elif len(palabra1) > len(palabra3) and len(palabra1) > len(palabra2) and len(palabra3) > len(palabra2):
-    print('el orden es: ', len(palabra1), len(palabra3), len(palabra2))
+
+
+
 
 

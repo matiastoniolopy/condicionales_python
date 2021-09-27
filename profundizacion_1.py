@@ -1,4 +1,4 @@
-# Condicionales [Python]
+# Tipos de variables [Python]
 # Ejercicios de profundización
 
 # Autor: Inove Coding School
@@ -15,25 +15,58 @@
 # Ejercicios de práctica con números
 '''
 Enunciado:
-Realice un programa que solicite por consola 2 números
-Calcule la diferencia entre ellos e informe por pantalla
-si el resultado es positivo, negativo o cero.
+Realice un calculadora, se ingresará por línea de comando dos
+números reales y se deberá calcular todas las operaciones entre ellos:
+A) Suma
+B) Resta
+C) Multiplicación
+D) División
+E) Exponente/Potencia
+
+- Para todos los casos se debe imprimir en pantalla el resultado aclarando
+  la operación realizada en cada caso y con que números
+  se ha realizado la operación
+  ej: La suma entre 4.2 y 6.5 es 10.7
 '''
 
-print('Ejercicios de práctica con números')
+print('¡Nuestra primera calculadora!')
 # Empezar aquí la resolución del ejercicio
 
-numero1 = int(input('ingrese el primer numero:\n'))
-numero2 = int(input('ingrese el segundo numero:\n'))
+el_numero = 10
+el_num = 2
+
+#operando la suma
+
+suma = el_numero + el_num
+print('el resultado de sumar', el_numero, 'y', el_num, ('es'), suma)
 
 
-if numero1 > numero2:
-    print(numero1, 'es mayor a', numero2,)
-elif numero2 > numero1:
-    print(numero2, 'es mayor a', numero1)
-elif numero1 == numero2:
-    print(numero1, 'y', numero2, 'son iguales')
-    
+#operando resta
+
+resta = el_numero - el_num
+print('el resultado de restar', el_numero, 'y', el_num, 'es', resta)
+
+#operando multiplicacion
+
+multiplicar = el_numero * el_num
+print('el resultado de multiplicar', el_numero, 'y', el_num, 'es', multiplicar)
+
+#operando division
+
+divison = el_numero / el_num
+print('el resultado de dividir', el_numero, 'y', el_num, 'es', divison)
+
+#operando exponente
+
+exponente = el_numero ** el_num
+print('el resultado de exponente', el_numero, 'y', el_num, 'es', exponente)
+
+
+
+
+
+
+
 
 
 
