@@ -1,4 +1,4 @@
-# Condicionales [Python]
+# Tipos de variables [Python]
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
@@ -7,54 +7,25 @@
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
 
-# Ejercicios de práctica numérica
+# Ejemplos variables de texto
 
-# Condicionales anidados
-numero_1 = 7
-numero_2 = -2
+# Ingrese primero su nombre y luego su apellido
+# Capture ambos datos e imprima su nombre completo
+print('Ingrese por consola su nombre/s:')
+nombre = str(input())
 
-if numero_1 > 5 and numero_2 >= 0:
-    print("Resp=1")
-else:
-    print("Resp=2")
-if numero_2 > 5:
-    print("Resp=3")
-else:
-    print("Resp=4")
+print('Ingrese por consola su apellido/s:')
+apellido = str(input())
 
-# Verifique si el numero_1 es mayor a 5
-#   --> En caso afirmativo, verifique si el numero_2
-#       es positivo
-#       --> En caso afirmativo imprima en pantalla "Resp=1"
-#       --> En caso negativo imprima en pantalla   "Resp=2"
-#  --> En caso negativo (numero_1 no es mayor a 5)
-#      verifique si el numero_2 es mayor a 5
-#       --> En caso afirmativo imprima en pantalla "Resp=3"
-#       --> En caso negativo imprima en pantalla "Resp=4"
+# Imprima su nombre completo
+print("el nombre es", nombre, apellido)
 
-# Verifique la calificación de un estudiante según su
-# puntaje en un examen
-puntaje = 70
+# Almacenar su nombre completo en una variable
+# nombre_completo = .....
+nombre_completo = nombre + apellido
+cantidad_letras = len(nombre_completo)
+print(len(nombre_completo))
 
-if puntaje >= 90:
-    print("A")
-    if puntaje >= 80:
-        print("B")
-    if puntaje >= 70:
-        print("C")
-    if puntaje >= 60:
-        print("D")
-    if puntaje < 60:
-        print("F")
-else:
-    ("EL VALOR INGRESADO NO ES VALIDO, intente de nuevo")
-
-
-# Si el puntaje es mayor igual a 90 --> imprimir A
-# Si el puntaje es mayor igual a 80 --> imprimir B
-# Si el puntaje es mayor igual a 70 --> imprimir C
-# Si el puntaje es mayor igual a 60 --> imprimir D
-# Si el puntaje es menor a  60      --> imprimir F
-
-# Debe imprimir en pantalla la calificacion
-# Utilizar "if" anidados
+# Imprimir la cantidad de letras que posee su nombre completo
+# cantidad_letras = len(....)
+print("nombre completo es", nombre, ('y'), apellido, )
